@@ -1,0 +1,28 @@
+<!-- TARNITA_IRIS_PROBLEMA_20
+   20. Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.    -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 20</title>
+  </head>
+  <body>
+    <script>
+      function check(a, b) {
+        if (a >= 0 && b >= 0) {
+          return "BOTH NUMBERS ARE POSITIVE";
+        } else if (a < 0 && b >= 0) {
+          return "THE FIRST NUMBER IS NEGATIVE";
+        } else if (b < 0 && a >= 0) {
+          return "THE SECOND NUMBER IS NEGATIVE";
+        } else if (a < 0 && b < 0) {
+          return "BOTH NUMBERS ARE NEGATIVE";
+        }
+      }
+
+      console.log(check(8, 8));
+      console.log(check(-8, 8));
+      console.log(check(8, -8));
+      console.log(check(-8, -8));
+    </script>
+  </body>
+</html>

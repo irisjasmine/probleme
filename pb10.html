@@ -1,0 +1,44 @@
+<!-- TARNITA_IRIS_PROBLEMA_10
+  10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).  
+        -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PB 10</title>
+    <script src="pb10.js"></script>
+    <style>
+      form {
+        padding: 10px;
+      }
+      label,
+      input,
+      button,
+      p {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <form>
+        <label>1st Number: </label>
+        <input type="number" class="firstNumber" /><br />
+        <label>2nd Number: </label>
+        <input type="number" class="secondNumber" /><br />
+        <button
+          class="multiplyButton"
+          onclick="multiplyNumbers()"
+          value="Multiply"
+        >
+          Multiply
+        </button>
+        <button class="divideButton" onclick="divideNumbers()" value="Divide">
+          Divide</button
+        ><br />
+        <p>The result is:</p>
+        <br />
+        <p class="result"></p>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!--TARNITA_IRIS_PROBLEMA_130
+	130. Write a JavaScript program to find the number of even digits in a given integer. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 130</title>
+  </head>
+  <body>
+    <script>
+      function even_digits(x) {
+        var aux = 0;
+        while (x) {
+          aux += x % 2 === 0;
+          x = Math.floor(x / 10);
+        }
+        return aux;
+      }
+      console.log(even_digits(3));
+      console.log(even_digits(345568805));
+    </script>
+  </body>
+</html>

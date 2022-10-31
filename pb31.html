@@ -1,0 +1,31 @@
+<!-- TARNITA_IRIS_PROBLEMA_31
+	31. Write a JavaScript program to find the largest of three given integers.   -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 31</title>
+  </head>
+  <body>
+    <script>
+      var maxi = 0;
+      var a = 1;
+      var b = 5;
+      var c = 3;
+      function largestNumber(a, b, c) {
+        if (a >= maxi) {
+          maxi = a;
+        }
+        if (b >= maxi) {
+          maxi = b;
+        }
+        if (c >= maxi) {
+          maxi = c;
+        }
+
+        return maxi;
+      }
+      console.log(largestNumber(a, b, c));
+    </script>
+  </body>
+</html>

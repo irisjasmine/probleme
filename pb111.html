@@ -1,0 +1,25 @@
+<!-- TARNITA_IRIS_PROBLEMA_111
+    111. Write a JavaScript program to check a number from three given numbers where two numbers are equal, find the third one.  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 111</title>
+  </head>
+  <body>
+    <script>
+      function check(a, b, c) {
+        if (a == b && a == c && b == c) {
+          return "ALL NUMBERS ARE EQUAL";
+        } else if (a != c && b != c && a == b) {
+          return "THE THIRD NUMBER IS: " + c;
+        } else if (b != a && b !== c && a == c) {
+          return "THE THIRD NUMBER IS: " + b;
+        } else if (a != c && a != b && b == c) {
+          return "THE THIRD NUMBER IS: " + a;
+        }
+      }
+      console.log(check(8, 100, 8));
+      console.log(check(8, 8, 8));
+    </script>
+  </body>
+</html>

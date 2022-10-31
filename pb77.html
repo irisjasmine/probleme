@@ -1,0 +1,22 @@
+<!--TARNITA_IRIS_PROBLEMA_77
+    	77. Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3.  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 77</title>
+  </head>
+  <body>
+    <script>
+      function verify(x) {
+        if (x.includes(1) || x.includes(3)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log(verify([1, 2]));
+      console.log(verify([2, 5]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- TARNITA_IRIS_PROBLEMA_51
+	51. Write a JavaScript program to convert a given number to hours and minutes.  
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 51</title>
+  </head>
+  <body>
+    <script>
+      function convert(number) {
+        var minute = number % 60;
+        var hour = Math.ceil(number / 60);
+        return hour + ":" + minute;
+      }
+      console.log(convert(100));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!--TARNITA_IRIS_PROBLEMA_41
+41. Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 41</title>
+  </head>
+  <body>
+    <script>
+      function sum(x, y, z) {
+        if (x == y && y == z && x == z) {
+          return "30";
+        } else if (x == y || y == z || x == z) {
+          return "40";
+        } else return "20";
+      }
+      console.log(sum(2, 6, 4));
+      console.log(sum(2, 2, 2));
+      console.log(sum(3, 2, 2));
+    </script>
+  </body>
+</html>

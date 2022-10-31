@@ -1,0 +1,23 @@
+<!-- TARNITA_IRIS_PROBLEMA_149
+Write a JavaScript program to change the capitalization of all letters in a given string.   -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 149</title>
+  </head>
+  <body>
+    <script>
+      function capitalization(string) {
+        var emptyString = " ";
+        for (var i = 0; i < string.length; i++) {
+          if (/[A-Z]/.test(string[i])) {
+            emptyString += string[i].toLowerCase();
+          } else emptyString += string[i].toUpperCase();
+        }
+        return emptyString;
+      }
+      document.write("sTrInG is transformed into:" + capitalization("sTrInG"));
+    </script>
+  </body>
+</html>

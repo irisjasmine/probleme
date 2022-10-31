@@ -1,0 +1,24 @@
+<!-- TARNITA_IRIS_PROBLEMA_147
+	147. Write a JavaScript program to compute the sum of all digits that occur in a given string.  
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PROBLEMA 147</title>
+  </head>
+  <body>
+    <script>
+      var string = "5tr1n9";
+      function digitSum(string) {
+        var sum = 0;
+        for (var i = 0; i <= string.length; i++) {
+          if (/[0-9]/.test(string[i])) {
+            sum += parseInt(string[i]);
+          }
+          return sum;
+        }
+      }
+      console.log(digitSum(string));
+    </script>
+  </body>
+</html>
