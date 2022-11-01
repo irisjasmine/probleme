@@ -22,8 +22,7 @@ if (hour === 0 && period === " AM " && minute === 0 && second === 0) {
   }
 }
 
-if (hour === 0 && period === " PM ") {
-  if (minute === 0 && second === 0) {
+if (hour === 0 && period === " PM " && minute === 0 && second === 0) {
     hour = 12;
     period = " PM";
   }
