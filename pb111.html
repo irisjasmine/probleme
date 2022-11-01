@@ -8,13 +8,13 @@
   <body>
     <script>
       function check(a, b, c) {
-        if (a == b && a == c && b == c) {
+        if (a === b && a === c && b === c) {
           return "ALL NUMBERS ARE EQUAL";
-        } else if (a != c && b != c && a == b) {
+        } else if (a != c && b != c && a === b) {
           return "THE THIRD NUMBER IS: " + c;
-        } else if (b != a && b !== c && a == c) {
+        } else if (b != a && b != c && a === c) {
           return "THE THIRD NUMBER IS: " + b;
-        } else if (a != c && a != b && b == c) {
+        } else if (a != c && a != b && b === c) {
           return "THE THIRD NUMBER IS: " + a;
         }
       }
