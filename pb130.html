@@ -10,10 +10,9 @@
     <script>
       function even_digits(x) {
         var aux = 0;
-        while (x) {
-          aux += x % 2 === 0;
-          x = Math.floor(x / 10);
-        }
+        if(x % 2 === 0){
+	aux = Math.floor(x / 2);
+	} 
         return aux;
       }
       console.log(even_digits(3));
